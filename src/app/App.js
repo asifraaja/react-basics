@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import Header from './Header.js';
 import Footer from './Footer.js';
-import Home from './Home.js';
 
 class App extends Component {
 
@@ -20,38 +18,10 @@ class App extends Component {
     });
   }
   render() {
-    var books = [
-        {
-            name : "React Js",
-            authors : [
-                "Douglas",
-                "Cockford",
-                "Facebook"
-            ]
-        },
-        {
-            name : "Node Js",
-            authors : [
-                "Me",
-                "You"
-            ]
-        },
-        {
-            name : "Node Js",
-            authors : [
-                "Me",
-                "You"
-            ]
-        }
-    ];
-
     return (
       <div className="App">
         <div className="row">
             <Header header={this.state.header} />
-        </div>
-        <div className="row">
-            <Home books={books}/>
         </div>
         <div className="row">
             <Footer />
